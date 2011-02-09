@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/saintly.rb
+rails/init.rb
+test/saintly_test.rb

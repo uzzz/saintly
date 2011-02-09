@@ -1,0 +1,40 @@
+=== 0.1.1 / 2010-06-30
+
+* starting point
+
+=== 0.1.2 / 2010-06-30
+
+* Fixed NPE
+
+=== 0.1.3 / 2010-06-30
+
+* Case insensitive
+
+=== 0.1.4 / 2010-07-08
+
+* Allows are partials, makes it easier to accept plurals
+
+=== 0.1.5 / 2010-07-08
+
+* Allows are now regex components.  Added matchers to allow *lass (e.g. lass, glass, class) and bass
+
+=== 0.1.6 / 2010-07-12
+
+* Allows words matching "assoc*" 
+
+=== 0.1.7 / 2010-07-12
+
+* Allows words matching ".*lass.*" (e.g. classified, glassware)
+
+=== 0.1.8 / 2010-07-13
+
+* Allows words matching "(l|m)ass." (massachusetts)
+
+
+=== 0.1.9 / 2010-07-13
+
+* Disallow words like assclown, asshat, asswipe
+
+=== 0.1.10 / 2010-07-13
+
+* Dissallow more words, like tits.
