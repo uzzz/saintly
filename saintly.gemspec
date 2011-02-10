@@ -21,8 +21,9 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "init.rb",
-    "lib/railtie.rb",
     "lib/saintly.rb",
+    "lib/saintly/railtie.rb",
+    "lib/saintly/saintly.rb",
     "saintly.gemspec",
     "test/saintly_test.rb"
   ]
