@@ -1,5 +1,5 @@
 module Saintly
-  VERSION = "0.1.10"
+  VERSION = "0.2"
 
   def self.sanitize(text)
     return if text.nil?
@@ -17,9 +17,7 @@ module Saintly
     RESTRICTED_PARTIALS.map{|w| '\w*' + w + '\w*'}
   end
     
-  
   ALLOWED_WORDS = [ 'scunthorpe', 'shitake.*']
-  
   
   RESTRICTED_PARTIALS = [
     'fuck',
@@ -34,11 +32,9 @@ module Saintly
     'twat', 'ass', 'tits', 'piss', 'cocksucker'
     ]
     
-  module Rails
-    
+  module Base
     def self.included(base)
       base.extend ClassMethods
-
     end
     
     module ClassMethods
@@ -48,7 +44,7 @@ module Saintly
         
         args.each do |col|
           define_method (col.to_s+"_with_saintly").to_sym do
-              Saintly.sanitize(read_attribute(col))
+            Saintly.sanitize(read_attribute(col))
           end
           alias_method_chain col, :saintly
         end
