@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
     "init.rb",
     "lib/railtie.rb",
     "lib/saintly.rb",
-    "test/saintly_test.rb",
-    "whatwhatwhat.gemspec"
+    "saintly.gemspec",
+    "test/saintly_test.rb"
   ]
   s.homepage = %q{https://github.com/uzzz/saintly}
   s.require_paths = ["lib"]
